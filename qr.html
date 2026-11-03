@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Willowfield QR Card</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Outfit:wght@600&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px 16px; background: #e4e3dd; color: #000; font: 400 17px/1.5 Figtree, system-ui, sans-serif; }
+  .tool, .card { max-width: 420px; margin: 0 auto; }
+  .tool { margin-bottom: 24px; }
+  label { display: block; font-weight: 600; margin-bottom: 6px; }
+  input { width: 100%; min-height: 48px; padding: 8px 12px; font: inherit; border: 2px solid #000; border-radius: 10px; background: #fff; color: #000; }
+  button { margin-top: 10px; min-height: 48px; width: 100%; font: 600 16px Figtree, system-ui, sans-serif; color: #fff; background: #000; border: 0; border-radius: 10px; cursor: pointer; }
+  .tool p { font-size: 15px; margin: 8px 0 0; }
+  .card { background: #fff; border-radius: 18px; padding: 32px; text-align: center; }
+  .card img { width: 72px; height: auto; }
+  .card h1 { font: 600 30px/1.1 Outfit, Figtree, sans-serif; margin: 16px 0 6px; }
+  .card p { margin: 0; }
+  #code { margin: 20px auto; max-width: 280px; }
+  #code svg { display: block; width: 100%; height: auto; }
+  #address { font-weight: 600; font-size: 15px; word-break: break-all; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .tool { display: none; }
+    .card { padding: 16mm; }
+  }
+</style>
+</head>
+<body>
+  <div class="tool">
+    <label for="url">Page address</label>
+    <input id="url" type="url" inputmode="url" spellcheck="false">
+    <p id="status" role="status">The code updates as you type. Test it with a phone before printing.</p>
+    <button type="button" onclick="print()">Print</button>
+  </div>
+  <div class="card">
+    <img src="https://images.squarespace-cdn.com/content/v1/61b205da8df4c353540f9045/d4ae6d65-758d-4424-be61-73fa9103ebe7/Icon1.png?format=300w" alt="Willowfield Church">
+    <h1>This Sunday</h1>
+    <p>Scan for readings, sermon notes, next steps and what's on.</p>
+    <div id="code"></div>
+    <p id="address"></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+  <script>
+    const input = document.getElementById('url');
+    input.value = location.href.replace(/qr\.html.*$/, '');
+    function draw() {
+      const value = input.value.trim();
+      const qr = qrcode(0, 'M');
+      qr.addData(value);
+      qr.make();
+      document.getElementById('code').innerHTML = qr.createSvgTag({ cellSize: 8, margin: 16, scalable: true });
+      document.getElementById('address').textContent = value.replace(/^https?:\/\//, '').replace(/\/$/, '');
+    }
+    input.addEventListener('input', draw);
+    draw();
+  </script>
+</body>
+</html>

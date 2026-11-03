@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Willowfield Admin</title>
+<meta name="theme-color" content="#e4e3dd" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161614" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="https://images.squarespace-cdn.com/content/v1/61b205da8df4c353540f9045/d4ae6d65-758d-4424-be61-73fa9103ebe7/Icon1.png?format=100w">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin">
+  <header class="wrap admin-top">
+    <h1>Edit the Sunday page</h1>
+    <button type="button" id="sign-out" class="btn-text" hidden>Sign out</button>
+  </header>
+
+  <main class="wrap">
+    <div id="local-banner" class="banner" hidden>Preview only. Nothing here can be published until the site is hosted.</div>
+    <div id="message" role="status" aria-live="polite"></div>
+    <p id="loading" class="muted">Loading…</p>
+    <form id="login" class="panel login" hidden>
+      <h2>Sign in</h2>
+      <p id="login-error" class="login-error" role="alert" hidden></p>
+      <label class="field">
+        <span class="field-label">Username</span>
+        <input id="username" type="text" name="username" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+      </label>
+      <label class="field">
+        <span class="field-label">Password</span>
+        <input id="password" type="password" name="password" autocomplete="current-password" required>
+      </label>
+      <button type="submit" id="login-button" class="btn-primary login-button">Sign in</button>
+    </form>
+    <form id="form" novalidate hidden></form>
+    <section id="local-output" class="panel" hidden>
+      <h2>What would be published</h2>
+      <textarea id="local-text" rows="14" readonly aria-label="Generated this-week.txt"></textarea>
+    </section>
+  </main>
+
+  <div id="actions" class="actions" hidden>
+    <div class="wrap actions-row">
+      <p id="status" class="status" aria-live="polite"></p>
+      <button type="button" id="discard" class="btn-text" hidden>Discard</button>
+      <button type="button" id="preview" class="btn-small">Preview</button>
+      <button type="button" id="publish" class="btn-primary">Publish</button>
+    </div>
+  </div>
+
+  <div id="preview-layer" class="preview-layer" role="dialog" aria-modal="true" aria-label="Page preview" hidden>
+    <div class="preview-bar">
+      <strong>Preview: not published yet</strong>
+      <button type="button" id="preview-close" class="btn-small">Close</button>
+    </div>
+    <iframe id="preview-frame" title="Preview of the Sunday page"></iframe>
+  </div>
+
+  <script src="../content.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

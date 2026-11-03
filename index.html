@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Willowfield Church: This Sunday</title>
+<meta name="description" content="Readings, sermon notes, next steps and what's on at Willowfield Church, Belfast.">
+<meta name="theme-color" content="#e4e3dd" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161614" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="https://images.squarespace-cdn.com/content/v1/61b205da8df4c353540f9045/d4ae6d65-758d-4424-be61-73fa9103ebe7/Icon1.png?format=100w">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a href="https://www.willowfieldchurch.co.uk" class="logo">
+    <img src="https://images.squarespace-cdn.com/content/v1/61b205da8df4c353540f9045/d4ae6d65-758d-4424-be61-73fa9103ebe7/Icon1.png?format=300w" alt="Willowfield Church" width="64" height="35">
+  </a>
+  <a href="#next" class="btn-outline">I'm New</a>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="photo"><img id="hero-photo" alt="" hidden></div>
+    <h1>Welcome to <span>Willowfield Church</span></h1>
+    <p class="meets" id="meets"></p>
+  </section>
+
+  <nav class="jump" aria-label="Page sections">
+    <div class="wrap jump-row">
+      <a href="#readings">Readings</a>
+      <a href="#notes">Notes</a>
+      <a href="#next">Next steps</a>
+      <a href="#whats-on">What's On</a>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <div id="error" class="panel" hidden>
+      <h2>We can't load this week's page</h2>
+      <p>Please check your connection and try again, or visit <a href="https://www.willowfieldchurch.co.uk">willowfieldchurch.co.uk</a>.</p>
+    </div>
+
+    <div id="content" hidden>
+      <section id="sunday" class="section">
+        <h2>This Sunday</h2>
+        <p class="date" id="sunday-date"></p>
+        <p class="label" id="service-label">Choose your service</p>
+        <div class="switch" id="service-switch" role="group" aria-labelledby="service-label"></div>
+        <div id="service-info" class="panel" aria-live="polite"></div>
+      </section>
+
+      <section id="readings" class="section">
+        <h2>Readings</h2>
+        <div id="readings-list"></div>
+      </section>
+
+      <section id="notes" class="section">
+        <h2>Sermon Notes</h2>
+        <div id="notes-body" class="panel notes"></div>
+        <div class="panel mine">
+          <label for="my-notes">Your notes</label>
+          <textarea id="my-notes" rows="5" placeholder="Anything you want to remember?"></textarea>
+          <p class="mine-note">Copy or share your notes before you close this page, so you don't lose them.</p>
+          <div class="mine-foot">
+            <button type="button" id="copy-notes" class="btn-small">Copy</button>
+            <button type="button" id="share-notes" class="btn-small" hidden>Share</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="notices" class="section" hidden>
+        <h2>Notices</h2>
+        <div id="notices-list" class="list"></div>
+      </section>
+
+      <section id="next" class="section">
+        <h2>Take a Next Step</h2>
+        <div id="welcome" class="panel welcome"></div>
+        <div id="steps" class="list"></div>
+      </section>
+
+      <section id="whats-on" class="section">
+        <h2>What's On</h2>
+        <div id="events" class="list"></div>
+        <a id="events-link" class="more" hidden>See everything on the website <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="section links">
+        <h2>Quick Links</h2>
+        <div id="links" class="link-grid"></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="wrap foot">
+  <p>Willowfield Church, corner of Woodstock Road and My Lady's Road, Belfast.</p>
+  <p>Registered charity NIC101980 (Charity Commission for Northern Ireland).</p>
+</footer>
+
+<noscript><p class="wrap">This page needs JavaScript. You can find everything at <a href="https://www.willowfieldchurch.co.uk">willowfieldchurch.co.uk</a>.</p></noscript>
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+// ============================================================
+// WILLOWFIELD SUNDAY PAGE: this is the only file to edit each week.
+//
+// How it works:
+//   - A line starting with # starts a new block. Keep these exactly as they are.
+//   - Change the text after each colon. Leave a line out if you don't need it.
+//   - Lines starting with // are notes to yourself and never appear on the page.
+//   - "Notes:" must be the last thing in a service block.
+//
+// Inside Notes you can use:
+//   ## A heading
+//   - A bullet point
+//   **bold words**
+//   Any other line is a normal paragraph.
+//
+// WEEKLY: update # SUNDAY and each # SERVICE.
+// WHEN NEEDED: # NOTICE, # EVENT and # LINK. Past dated events hide themselves.
+// RARELY: # WELCOME, # NEXT STEP and # SETTINGS.
+// ============================================================
+
+
+# SUNDAY
+Date: Sunday 8 November 2026
+
+
+// ------------------------------------------------------------
+// One block per service. Delete the "Sample" line once the real
+// readings and notes are in, and the "Sample content" label goes too.
+// Type each reading as a reference only, e.g. Reading: Matthew 8:23-27
+// The page links it to the ESV on Bible Gateway.
+// ------------------------------------------------------------
+
+# SERVICE
+Time: 10am & 11.30am
+Title: Remembrance Sunday
+Theme: Amazed by Jesus
+Led by: Clive Atkinson
+Preaching: Reuben Johnston
+Sample: yes
+Reading: Psalm 46
+Reading: Matthew 8:23-27
+Notes PDF:
+Notes:
+## Who is this man?
+The disciples have watched Jesus teach and heal, yet the storm shows them how little they have understood.
+- **The storm is real.** Following Jesus does not take us out of hard places.
+- **Jesus is present.** He is in the boat with them the whole way through.
+- **His word is enough.** One sentence, and the wind and waves are still.
+
+## To take home
+- Where do you most need to remember that Jesus is with you this week?
+- Who could you share that with?
+
+# SERVICE
+Time: 5pm
+Title: Holy Communion with an Act of Remembrance
+Led by: Reuben Johnston
+Preaching: Clive Atkinson
+Sample: yes
+Reading: Micah 4:1-5
+Notes:
+
+# SERVICE
+Time: 7pm
+Title: Confirmation Service
+Led by: Clive Atkinson
+Preaching: Bishop David McClay
+Notes:
+
+
+// ------------------------------------------------------------
+// NOTICES for this week. Add or delete blocks freely. Link is optional.
+// With no notices, the section disappears.
+// ------------------------------------------------------------
+
+# NOTICE
+Title: Confirmation Service
+About: Bishop David McClay is preaching at our 7pm service this Sunday.
+
+
+// ------------------------------------------------------------
+// WHAT'S ON. Write dates like 17/11/26, and the event hides itself
+// once the date has passed. For something regular, write it in words
+// (e.g. Date: Every Wednesday) and it stays until you remove it.
+// Link is optional.
+// ------------------------------------------------------------
+
+# EVENT
+Date: Every Wednesday
+Time: 7.00am
+Title: Early Morning Prayers
+About: In church. Come when you can, leave when you need to.
+
+# EVENT
+Date: 17/11/26
+Time: 2pm
+Title: Storytelling at the W Club
+About: Join Belfast storyteller Sharon Dickson for an afternoon of tales that bring the past to life. Everyone is welcome.
+
+# EVENT
+Date: 17/11/26
+Time: 7.30pm
+Title: Focus Prayer
+About: Join us for over an hour of prayer and worship.
+
+# EVENT
+Date: 24/11/26
+Time: 2pm
+Title: Storytelling at the W Club
+About: Join Glenarm storyteller Colin Urwin for an afternoon packed with tales and tunes. Everyone is welcome.
+
+
+// ------------------------------------------------------------
+// USEFUL LINKS, shown at the bottom of the page.
+// ------------------------------------------------------------
+
+# LINK
+Title: Newsletter
+Link: https://mcusercontent.com/bb0c2a9bd8/files/1149f4c1-a95f-4ce8-22c7-e1ef795f0b2e/October_Mag.pdf
+
+# LINK
+Title: Watch online
+Link: https://www.youtube.com/@willowfieldchurch2402
+
+# LINK
+Title: Find us
+Link: https://goo.gl/maps/iGVqG1dt8qKTdCg19
+
+# LINK
+Title: Email the office
+Link: mailto:office@willowfieldchurch.co.uk
+
+# LINK
+Title: Call 028 9045 7654
+Link: tel:+442890457654
+
+# LINK
+Title: Main website
+Link: https://www.willowfieldchurch.co.uk
+
+
+// ------------------------------------------------------------
+// You should rarely need to change anything below this line.
+// ------------------------------------------------------------
+
+# WELCOME
+Photo: https://images.squarespace-cdn.com/content/v1/61b205da8df4c353540f9045/dd448fd5-f238-4667-8d5d-72aee2e387d2/247466562_10159606237747667_1541806323212179107_n.jpg?format=1000w
+Photo description: Runners passing Willowfield Church on the Woodstock Road
+Meets: Sundays at 10am, 11.30am, 5pm and 7pm. Corner of Woodstock Road and My Lady's Road, inner East Belfast.
+Title: New here? We're so glad you came.
+About: Look for the red lanyards if you need anything. Tea and coffee are served between the morning services and after the 7pm service, and there's Crèche, Kids Church and Youth Church every Sunday.
+Button: Say hello
+Link: https://willowfield.churchsuite.co.uk/forms/dtdglekd
+
+# NEXT STEP
+Title: Come to a Hello Event
+About: Meet the team and find out more about Willowfield.
+Link: https://willowfield.churchsuite.co.uk/forms/dtdglekd
+
+# NEXT STEP
+Title: Try Alpha
+About: A space to explore life's big questions.
+Link: https://www.willowfieldchurch.co.uk/alpha
+
+# NEXT STEP
+Title: Join a LifeGroup
+About: Get to know people in a smaller group.
+Link: https://www.willowfieldchurch.co.uk/lifegroups
+
+# NEXT STEP
+Title: Serve on a team
+About: Get involved, meet people and learn new skills.
+Link: https://www.willowfieldchurch.co.uk/make-a-difference
+
+# NEXT STEP
+Title: Prayer
+About: Ways to pray with us during the week.
+Link: https://www.willowfieldchurch.co.uk/services-1
+
+# NEXT STEP
+Title: Give
+About: Support the work of Willowfield.
+Link: https://willowfield.churchsuite.co.uk/donate/?source=connect
+
+
+# SETTINGS
+Events link: https://www.willowfieldchurch.co.uk/home/#events-link
